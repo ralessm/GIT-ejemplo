@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>My Profile</title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0" />
+    <style>
+      nav {
+        width: 100%;
+        height: 30px;
+        background-color: rgb(201, 201, 201);
+      }
+      ul {
+        list-style-type: none;
+      }
+      li{
+          display: inline;
+          float: right;
+          margin: 5px;
+      }
+      .columna {
+        float: left;
+        width: 40%;
+        padding: 10px;
+        }
+      .cover{
+          background-image: url('cover.jpeg'); background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 300px;
+          text-align: center;
+      }
+      #profile-img{
+        margin-top: 150px;
+      }
+      #profile-content{
+          margin-top: 80px;
+      }
+      .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: red;
+            color: white;
+            text-align: center;
+        }
+        .video{
+            width:320px;
+            height:240px;
+            margin: 50px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li> <a href="#inicio">Inicio</a></li>
+        <li><a href="#estudios"> Estudios </a></li>
+        <li><a href="#experiencia">Experiencia</li></a>
+        <li><a href="#idiomas">Idiomas</a></li>
+      </ul>
+    </nav>
+    <section id="inicio">
+      <div class="cover">
+        <img src="profile.png" id="profile-img"alt="" />
+      </div>
+      <div id="profile-content">
+        <h2>My name</h2>
+        <p>
+          <b>Hi, my name is Pretronila</b>
+          es un gran placer para mi que estes visitando mi sitio web para que me
+          conozcas un poco mas. Para empezar a explicarte quier soy dejame
+          decirte que soy una joven que ama la technologia aunque a veces no
+          entiendo mucho pero siempre me gusta preguntar. Entre mis objetivos se
+          encuentra ser la mejor ingeniero en mi rubro.
+        </p>
+      </div>
+    </section>
+    <section id="estudios">
+        <div class="columna">
+            <h3>Mis Estudios</h3>
+            <div>
+                <label for=""> <b>Primaria:</b> 01-22-1999 hasta 11-11-2006</label>
+                <p>La escuela la realize en la academia x, mi promedio fue: x</p>
+            </div>
+            <div>
+                <label for=""> <b>Secundaria: </b> 01-22-1999 hasta 11-11-2006</label>
+                <p>La escuela la realize en la academia x</p>
+            </div>
+        </div>
+    </section>
+    <section id="habilidades">
+        <div class="columna">
+            <h3> Mis habilidades</h3>
+            <div>
+                <label for=""> Aprendo por mi misma:</label>
+                <p>Me gusta aprender po mi propia cuenta, de hecho ahorita estoy tomando unos cursos con..</p>
+            </div>
+            <div>
+                <label for=""> Habilidad 2:</label>
+                <p>Me gusta  bla, bla, bla..</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="otros">
+        <div class="video">
+            <h3> Aqui unos ejemplos de mis actividades: </h3>
+            <video controls class="video">
+                <source src="guarda un video en la carpeta del proyecto y coloca aqui el nombre. Ejemplo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+        </div>
+    </section>
+    <div class="footer">
+        <p>Footer : En esta seccion te recomendamos colocar tus contactos como instagram, correo, linkedIn</p>
+      </div>
+    <script src="js/scripts.js"></script>
+  </body>
+
+</html>
